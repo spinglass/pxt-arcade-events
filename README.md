@@ -3,7 +3,52 @@
 
 > Open this page at [https://spinglass.github.io/pxt-arcade-events/](https://spinglass.github.io/pxt-arcade-events/)
 
-## Use as Extension
+## Usage
+
+### ``sendEventNow``
+
+Use the ``sendEventNow`` block to immediately fire an event.
+This will replace any previously set time for the event.
+
+```blocks
+events.sendEventNow("myEventName")
+```
+
+### ``sendEvent``
+
+Use the ``sendEvent`` block to immediately fire an event a number of seconds later.
+This will replace any previously set time for the event.
+
+```blocks
+events.sendEvent("myEventName", 1)
+```
+
+### ``cancelEvent``
+
+Use the ``cancelEvent`` block to stop the named event firing, if it was queued.
+
+```blocks
+events.cancelEvent("myEventName")
+```
+
+## ``cancelAllEvents``
+
+Use the ``cancelAllEvents`` block to stop all queued events from firing.
+
+```blocks
+events.cancelAllEvents()
+```
+
+### ``onEvent``
+
+Use the ``onEvent`` block to add a handler for an event of the given name
+
+```blocks
+events.onEvent("myEventName", () => {
+})
+```
+
+## Use as Extension ![MakeCode Arcade Release](https://github.com/spinglass/pxt-arcade-events/actions/workflows/makecode-release.yml/badge.svg)
 
 This repository can be added as an **extension** in MakeCode.
 
