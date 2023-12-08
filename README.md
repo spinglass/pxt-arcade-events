@@ -31,7 +31,7 @@ Use the ``cancelEvent`` block to stop the named event firing, if it was queued.
 events.cancelEvent("myEventName")
 ```
 
-## ``cancelAllEvents``
+### ``cancelAllEvents``
 
 Use the ``cancelAllEvents`` block to stop all queued events from firing.
 
