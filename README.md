@@ -41,7 +41,7 @@ events.cancelAllEvents()
 
 ### ``onEvent``
 
-Use the ``onEvent`` block to add a handler for an event of the given name
+Use the ``onEvent`` block to add a handler for an event of the given name.
 
 ```blocks
 events.onEvent("myEventName", () => {
